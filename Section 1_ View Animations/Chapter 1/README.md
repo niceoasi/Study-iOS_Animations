@@ -7,29 +7,22 @@
 	* withDuration: animation의 duration
 	* delay: animation이 시작되고 두번째 UIKit이 기다리는 시간
 	* options: 
-		* layoutSubviews: 
-		* allowUserInteraction:
-		* beginFromCurrentState:  
-		* `repeat`:  
-		* autoreverse:  
-		* overrideInheritedDuration:  
-		* overrideInheritedCurve:  
-		* allowAnimatedContent:  
-		* showHideTransitionViews:  
-		* overrideInheritedOptions:  
-		* curveEaseInOut:  
-		* curveEaseIn:  
-		* curveEaseOut:  
-		* curveLinear:  
-		* transitionFlipFromLeft:  
-		* transitionFlipFromRight:  
-		* transitionCurlUp:  
-		* transitionCurlDown: 
-		* transitionCrossDissolve: 
-		* transitionFlipFromTop: 
-		* transitionFlipFromBottom: 
-		* preferredFramesPerSecond60: 
-		* preferredFramesPerSecond30: 
+		* layoutSubviews: Lay out subviews at commit time so that they are animated along with their parent.
+		* allowUserInteraction: Allow the user to interact with views while they are being animated.
+		* beginFromCurrentState: Start the animation from the current setting associated with an already in-flight animation. 
+		* `repeat`: Repeat the animation indefinitely. 
+		* autoreverse: Run the animation backwards and forwards (must be combined with the repeat option). 
+		* overrideInheritedDuration: Force the animation to use the original duration value specified when the animation was submitted. 
+		* overrideInheritedCurve: Force the animation to use the original curve value specified when the animation was submitted. 
+		* allowAnimatedContent: Animate the views by changing the property values dynamically and redrawing the view. 
+		* showHideTransitionViews: Hide or show views during a view transition. 
+		* overrideInheritedOptions: The option to not inherit the animation type or any options. 
+		* curveEaseInOut: Specify an ease-in ease-out curve, which causes the animation to begin slowly, accelerate through the middle of its duration, and then slow again before completing. 
+		* curveEaseIn: An ease-in curve causes the animation to begin slowly, and then speed up as it progresses. 
+		* curveEaseOut: An ease-out curve causes the animation to begin quickly, and then slow as it completes. 
+		* curveLinear: A linear animation curve causes an animation to occur evenly over its duration. 
+		* preferredFramesPerSecond60: A frame rate of 30 frames per second.
+		* preferredFramesPerSecond30: A frame rate of 60 frames per second.
 	* animations: animation이 실행 되는 closure부분
 	* completion: animation이 완료 된 후 실행 된 후 closure
 
